@@ -1,0 +1,77 @@
+\relax 
+\citation{munk2000}
+\citation{joy2021}
+\citation{cst}
+\citation{liu2018,ma2018}
+\citation{harrington}
+\citation{itoh1980,mittra1988}
+\citation{cwik1987}
+\citation{lezar2010}
+\@writefile{toc}{\contentsline {section}{\numberline {I}Introduction}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {II}Formulation}{1}{}\protected@file@percent }
+\newlabel{sec:form}{{II}{1}{}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-A}}Structure and Boundary Condition}{1}{}\protected@file@percent }
+\newlabel{eq:gbare}{{1}{1}{}{equation.1}{}}
+\citation{glisson1980}
+\citation{cwik1987}
+\citation{saad1986}
+\citation{paszke2019}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces (a) Layered unit-cell model. (b) Unit-cell geometries G1--G4 (white $=$ metal).}}{2}{}\protected@file@percent }
+\newlabel{fig:geometry}{{1}{2}{}{figure.1}{}}
+\newlabel{eq:ibc}{{2}{2}{}{equation.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-B}}Floquet Expansion and Spectral Green's Function}{2}{}\protected@file@percent }
+\newlabel{eq:floquet}{{3}{2}{}{equation.3}{}}
+\newlabel{eq:gmodal}{{4}{2}{}{equation.4}{}}
+\newlabel{eq:gdyad}{{5}{2}{}{equation.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-C}}Discretization}{2}{}\protected@file@percent }
+\newlabel{eq:system}{{7}{2}{}{equation.7}{}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Matrix-free product $\mathbf  {y}=\mathbf  {A}\mathbf  {I}$}}{2}{}\protected@file@percent }
+\newlabel{alg:matvec}{{1}{2}{}{algorithm.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {I}{\ignorespaces Cost per Frequency Point}}{2}{}\protected@file@percent }
+\newlabel{tab:complexity}{{I}{2}{}{table.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {II-D}}Reflection Coefficient}{2}{}\protected@file@percent }
+\newlabel{eq:s11}{{8}{2}{}{equation.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {III}GPU-Accelerated Solver}{2}{}\protected@file@percent }
+\newlabel{sec:gpu}{{III}{2}{}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-A}}FFT-Based Operator Application}{2}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Solver pipeline and distribution of the frequency sweep across GPUs.}}{3}{}\protected@file@percent }
+\newlabel{fig:pipeline}{{2}{3}{}{figure.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-B}}GPU-Resident GMRES}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {III-C}}Multi-GPU Frequency Sweep}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {IV}Results}{3}{}\protected@file@percent }
+\newlabel{sec:results}{{IV}{3}{}{section.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-A}}Setup}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-B}}Validation Against FEM}{3}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {II}{\ignorespaces Solver Parameters (Common to G1--G4)}}{3}{}\protected@file@percent }
+\newlabel{tab:setup}{{II}{3}{}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-C}}GMRES Iterations}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {\mbox  {IV-D}}Performance}{3}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {III}{\ignorespaces Four Validation Geometries}}{4}{}\protected@file@percent }
+\newlabel{tab:geoms}{{III}{4}{}{table.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Comparison of $|S_{11}|$ (dB) computed by the proposed solver ($N=120$) and by the commercial FEM solver for (a)~G1, (b)~G2, (c)~G3 and (d)~G4.}}{4}{}\protected@file@percent }
+\newlabel{fig:validation}{{3}{4}{}{figure.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {IV}{\ignorespaces Resonant Notches: FEM (CST) vs Proposed Solver ($N=120$)}}{4}{}\protected@file@percent }
+\newlabel{tab:valid}{{IV}{4}{}{table.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {V}{\ignorespaces Runtime for One 201-Point Sweep ($N=120$, 2--18~GHz)}}{4}{}\protected@file@percent }
+\newlabel{tab:perf}{{V}{4}{}{table.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces GMRES iteration count across the $N=120$ sweep of G1, with $|S_{11}|$ on the right axis.}}{4}{}\protected@file@percent }
+\newlabel{fig:conv}{{4}{4}{}{figure.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Projected wall-clock time for 1000 sweeps (201 points each, $N=120$, 2--18~GHz), taken as 1000 times the measured single-sweep time. Bars show the mean over G1--G4; whiskers span the fastest and slowest geometry.}}{4}{}\protected@file@percent }
+\newlabel{fig:scaling}{{5}{4}{}{figure.5}{}}
+\bibcite{munk2000}{1}
+\bibcite{joy2021}{2}
+\bibcite{cst}{3}
+\bibcite{liu2018}{4}
+\bibcite{ma2018}{5}
+\bibcite{harrington}{6}
+\bibcite{itoh1980}{7}
+\bibcite{mittra1988}{8}
+\bibcite{cwik1987}{9}
+\bibcite{lezar2010}{10}
+\bibcite{glisson1980}{11}
+\bibcite{saad1986}{12}
+\bibcite{paszke2019}{13}
+\@writefile{toc}{\contentsline {section}{\numberline {V}Conclusion}{5}{}\protected@file@percent }
+\newlabel{sec:concl}{{V}{5}{}{section.5}{}}
+\@writefile{toc}{\contentsline {section}{References}{5}{}\protected@file@percent }
+\gdef \@abspage@last{5}
